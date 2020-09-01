@@ -1,0 +1,54 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tvmaze">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_tvmaze_final"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_tvmaze_final_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name="my.nat.tvmaze.SplashScreen"
+            android:parentActivityName="my.nat.tvmaze.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+        android:name="my.nat.tvmaze.views.activities.HomeActivity"
+        android:theme="@style/AppThemeMaterial.NoActionBar" />
+        <activity
+            android:name="my.nat.tvmaze.views.activities.TvShowDetailActivity"
+            android:theme="@style/AppThemeMaterial.NoActionBar" />
+        <activity
+            android:name="my.nat.tvmaze.views.activities.EpisodeDetailActivity"
+            android:theme="@style/AppThemeMaterial.NoActionBar" />
+        <activity
+            android:name="my.nat.tvmaze.views.activities.SearchTvShowActivity"
+            android:theme="@style/AppThemeMaterial.NoActionBar" />
+        <activity
+            android:name="my.nat.tvmaze.views.activities.ActorActivity"
+            android:theme="@style/AppThemeMaterial.NoActionBar" />
+        <activity
+             android:name="my.nat.tvmaze.views.activities.ActorDetailActivity"
+             android:theme="@style/AppThemeMaterial.NoActionBar" />
+
+        <activity
+            android:name="my.nat.tvmaze.views.activities.FavoriteShows"
+            android:theme="@style/AppThemeMaterial.NoActionBar" />
+    </application>
+
+
+
+
+
+
+</manifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/LinearPoster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_one_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="#fcfcfc"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+
+            <ImageView
+                android:id="@+id/imageViewActor"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/no_imagen_available" />
+
+            <TextView
+                android:id="@+id/tvTitleActor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:layout_below="@id/imageViewShow"
+                android:paddingLeft="@dimen/card_content_padding"
+                android:paddingTop="@dimen/card_content_padding"
+                android:paddingRight="@dimen/card_content_padding"
+                android:text="Tittle"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>

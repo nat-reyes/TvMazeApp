@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_episode_tittle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:text="Tittle"
+            style="@style/AppThemeMaterial.AppBarOverlay"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:typeface="sans"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/detail_movie_title"
+            />
+
+        <ImageView
+            android:id="@+id/iv_backdrop_episode"
+            android:layout_width="250dp"
+            android:layout_height="320dp"
+            android:src="@drawable/no_imagen_available"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Hold movie backdrop image"
+            android:fitsSystemWindows="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_one_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="#fcfcfc"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+                   <androidx.appcompat.widget.AppCompatTextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/overview"
+                       android:layout_gravity="center"
+                       android:textColor="@color/colorAccent"
+                       android:textSize="@dimen/detail_movie_title"
+                       android:textStyle="bold"
+                       android:typeface="sans"/>
+
+                       <TextView
+                           android:id="@+id/tv_overview_episode"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/marginTitles"
+                           android:ellipsize="end"
+                           android:lineSpacingExtra="2dp"
+                           android:textColor="@color/colorAccent"
+                           android:textSize="@dimen/overview_text_size"
+                           android:typeface="sans" />
+
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

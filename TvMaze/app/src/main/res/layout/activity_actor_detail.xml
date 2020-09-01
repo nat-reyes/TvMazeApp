@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+        <include
+            android:id="@+id/include"
+            layout="@layout/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_name_actor"
+            style="@style/AppThemeMaterial.AppBarOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:ellipsize="end"
+            android:gravity="center|top"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="@string/home_Tittle"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/detail_movie_title"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/iv_backdrop_actor"
+            android:layout_width="250dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Hold movie backdrop image"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/no_imagen_available" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/overview_text_size"
+            android:layout_marginStart="140dp"
+            android:textStyle="bold"
+            android:text="@string/home_Tittle"
+            android:textColor="@color/colorAccent"
+            android:typeface="sans">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+        <include
+            layout="@layout/fragment_list_tvshows"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/headerView"
+            android:layout_marginTop="100dp" />
+    </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

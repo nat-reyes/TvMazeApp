@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/LinearPoster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_one_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="#fcfcfc"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvTitleShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/card_content_padding"
+                    android:paddingTop="@dimen/card_content_padding"
+                    android:paddingRight="@dimen/card_content_padding"
+                    android:textStyle="bold"
+                    android:text="Tittle"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+
+                <CheckBox
+                    android:id="@+id/favorite"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="-40dp"
+                    android:button="@drawable/check"
+                    android:buttonTint="@color/colorAccent"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageViewShow"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/no_imagen_available" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

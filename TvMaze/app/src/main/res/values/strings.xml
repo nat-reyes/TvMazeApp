@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TvMaze</string>
+    <string name="account_menu">Menu</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="mActors">Actors</string>
+    <string name="config">Config</string>
+    <string name="favs">Favorite</string>
+    <string name="adjust">Ajustes</string>
+    <string name="home_Tittle">Tv Shows</string>
+    <string name="descriptionTv">TvShows</string>
+    <string name="actors_tittle">Actor </string>
+    <string name="search_tvshow"> Search Tv show</string>
+    <string name="search_actor"> Search actor </string>
+    <string name="genre">Genre: </string>
+    <string name="overview"> Summary </string>
+    <string name="runtime">Runtime: </string>
+    <string name="schedule">Schedule: </string>
+    <string name="season">Season: </string>
+    <string name="episode">Episode</string>
+    <string name="favoriteShow">Your favorites</string>
+    <string name="episodes_list">Episodes List</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="empty_favs">You should add some tv shows, we are in quarantine</string>
+
+</resources>

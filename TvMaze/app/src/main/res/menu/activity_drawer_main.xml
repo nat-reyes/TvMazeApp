@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="@string/account_menu">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/home_it"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/home" />
+                <item
+                    android:id="@+id/search_it"
+                    android:icon="@drawable/ic_search"
+                    android:title="@string/search" />
+                <item
+                    android:id="@+id/actors_it"
+                    android:icon="@drawable/ic_actors"
+                    android:title="@string/mActors" />
+                <item
+                    android:id="@+id/fav_it"
+                    android:icon="@drawable/ic_carpeta"
+                    android:title="@string/favs" />
+
+            </group>
+
+        </menu>
+    </item>
+
+
+    <item android:title="@string/adjust">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/config_it"
+                    android:icon="@drawable/ic_config"
+                    android:title="@string/config" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
